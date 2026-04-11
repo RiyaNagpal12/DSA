@@ -9,7 +9,7 @@ Approach:
 Time Complexity: O(n)
 Space Complexity: O(n)
 */
-public class trappingwater {
+public class TrappingRainWater {
     public int traprainwaterwater(int height[]){
         int left[] = new int[height.length];
         int right[]= new int[height.length];
