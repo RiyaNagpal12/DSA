@@ -37,7 +37,7 @@ public class Traversals {
         if(root == null){
             return;
         }
-        System.out.print(root.data);
+        System.out.print(root.data + " ");
         preorder(root.left);
         preorder(root.right);
     }
@@ -50,7 +50,7 @@ public class Traversals {
         }
 
         inorder(root.left);
-        System.out.print(root.data);
+        System.out.print(root.data + " ");
         inorder(root.right);
     }
 
@@ -62,7 +62,7 @@ public class Traversals {
 
         postorder(root.left);
         postorder(root.right);
-        System.out.print(root.data);
+        System.out.print(root.data + " ");
     }
     
 
