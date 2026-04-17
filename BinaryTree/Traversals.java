@@ -1,3 +1,20 @@
+/*
+ * Binary Tree Traversals in Java
+ *
+ * This program demonstrates:
+ * 1. Construction of a Binary Tree using preorder array representation
+ * 2. Tree Traversals:
+ *    - Preorder (Root → Left → Right)
+ *    - Inorder (Left → Root → Right)
+ *    - Postorder (Left → Right → Root)
+ *
+ * Note:
+ * -1 represents a NULL node
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(h)  // h = height of tree (recursion stack)
+ */
+
 public class Traversals {
 
     public static class node {
