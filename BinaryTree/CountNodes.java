@@ -1,3 +1,8 @@
+/*Implemented recursive DFS traversal to count total nodes in a binary tree
+Handled base case for null nodes efficiently
+Ensured O(n) time complexity by visiting each node once
+Demonstrates strong understanding of tree recursion*/
+
 public class CountNodes {
   public static class Node{
     int data ;
