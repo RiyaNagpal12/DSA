@@ -1,3 +1,19 @@
+/* Problem: Find intersection of two arrays
+
+✔ Approach:
+- Sorted both arrays
+- Used two-pointer technique for traversal
+- Compared elements to find common values
+- Avoided duplicates while adding to result
+
+✔ Complexity:
+- Time: O(n log n)
+- Space: O(1)
+
+✔ Key Concept:
+Two-pointer technique on sorted arrays */
+
+
 import java.util.*;
 public class FindIntersection{
   public static int[] findintersection(int arr1[] , int arr2[]){
