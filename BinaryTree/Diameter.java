@@ -1,3 +1,21 @@
+/* ✔ Problem: Find diameter of a binary tree
+
+✔ Approach:
+- Used recursion to calculate height of subtrees
+- For each node, computed:
+  • Left diameter
+  • Right diameter
+  • Self diameter (left height + right height + 1)
+- Returned maximum value among them
+
+✔ Complexity:
+- Time: O(n²)
+- Space: O(h)
+
+✔ Key Concept:
+Tree recursion + height-based computation */
+
+
 public class Diameter {
   public static class Node {
     int data ;
