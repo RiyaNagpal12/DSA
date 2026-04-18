@@ -1,4 +1,19 @@
-import java.util.*;
+/* ✔ Problem: Find union of two arrays
+
+✔ Approach:
+- Sorted both arrays
+- Used two-pointer technique (merge logic)
+- Compared elements and added smaller one
+- Skipped duplicates to maintain uniqueness
+- Handled remaining elements after traversal
+
+✔ Complexity:
+- Time: O(n log n)
+- Space: O(1)
+
+✔ Key Concept:
+Merge-based approach (similar to merge sort) */
+import java.util.*; 
 
 public class UnionArray {
 
