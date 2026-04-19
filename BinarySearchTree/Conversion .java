@@ -1,4 +1,17 @@
 
+/* ✔ Problem: Convert BST to Balanced BST
+
+✔ Approach:
+- Performed inorder traversal to get sorted elements
+- Used divide & conquer to build balanced BST
+- Selected middle element as root for height balance
+
+✔ Complexity:
+- Time: O(n)
+- Space: O(n)
+
+✔ Key Concept:
+BST → Sorted Array → Balanced BST */
 import java.util.ArrayList;
 
 // convertedbst to balanced bst 
