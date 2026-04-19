@@ -1,5 +1,22 @@
-public class SortefArrayToBst {
 
+
+  /* ✔ Problem: Convert Sorted Array to Balanced BST
+
+✔ Approach:
+- Selected the middle element as root
+- Recursively constructed left subtree from left half
+- Recursively constructed right subtree from right half
+- Used inorder traversal to verify the BST structure
+
+✔ Complexity:
+- Time: O(n)
+- Space: O(log n)
+
+✔ Key Concept:
+Divide and Conquer + Recursion */
+import java.util.*;
+public class SortefArrayToBst {
+    
     public static class node {
         int data;
         node left;
