@@ -1,3 +1,5 @@
+/* Implemented validation of a Binary Search Tree using recursion with min–max range constraints. */
+
 public class ValidBst {
 
    public static class node {
