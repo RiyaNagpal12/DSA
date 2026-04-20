@@ -1,4 +1,4 @@
-ublic class FindTranspose  {
+public class FindTranspose  {
 
     public static void transpose(int arr[][]){
         int rows = arr.length;
