@@ -15,9 +15,9 @@ Finally print the modified array
             
             return;
         }
-        arr[i]= val;
-        change(arr, i+1, val+1);
-        arr[i]= arr[i]-2; // Backtracking 
+        arr[i]= val; 
+        change(arr, i+1, val+1); // increase filling 
+        arr[i]= arr[i]-2; // Backtracking to decrease element by 2
     }
 
     public static void printarr(int arr[]){
