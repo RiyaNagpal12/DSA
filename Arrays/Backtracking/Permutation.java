@@ -39,9 +39,9 @@ Concepts Used:
 - String manipulation
 */
 
-class ques30{
+class Permutation{
 
-    public static void Permutation(String str , String ans ){
+    public static void permutation(String str , String ans ){
 
         if(str.length()==0){
             System.out.println(ans);
