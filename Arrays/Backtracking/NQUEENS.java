@@ -1,4 +1,36 @@
-// Place NQUEEN IN NXn chessboard such that no 2 queens can attack each other 
+/*
+Problem: N-Queens Problem (Backtracking)
+
+Description:
+The N-Queens problem involves placing N queens on an N×N chessboard such that 
+no two queens attack each other. A queen can attack horizontally, vertically, 
+and diagonally.
+
+Approach:
+- Use Backtracking to try placing a queen row by row.
+- For each position, check if it is safe using the issafe() function:
+  1. Check vertical column (above rows)
+  2. Check left diagonal
+  3. Check right diagonal
+- If safe, place the queen and move to the next row.
+- If not safe, try the next column.
+- Backtrack by removing the queen and exploring other possibilities.
+
+Output:
+- Prints all possible valid board configurations.
+- Displays the total number of ways to place N queens.
+
+Time Complexity:
+O(N!) due to recursive backtracking.
+
+Example:
+For N = 4, total solutions = 2.
+
+Concepts Used:
+- Recursion
+- Backtracking
+- 2D Arrays
+*/
 public class ques31 {
     public static boolean issafe(char board[][] , int row , int col){
 
