@@ -1,3 +1,15 @@
+
+/* Problem Statement
+
+Determine the winner of a 3×3 Tic Tac Toe game board.
+
+ Approach
+Traverse the board and check all possible winning conditions:
+Rows (3 possibilities)
+Columns (3 possibilities)
+Diagonals (2 possibilities)
+A player wins if all three positions in any row, column, or diagonal contain the same symbol ('X' or 'O') and are not empty ('-'). */
+
 public class TicTacToe {
 
     public static char winner(char board[][]) {
