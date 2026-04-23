@@ -1,4 +1,30 @@
-public class ques36 {
+/**
+ * Problem: Rat in a Maze (Backtracking)
+ *
+ * Given an N x N maze represented as a 2D matrix:
+ * - 1 indicates an open cell (path available)
+ * - 0 indicates a blocked cell (cannot be traversed)
+ *
+ * A rat starts from the top-left corner (0,0) and needs to reach
+ * the bottom-right corner (N-1, N-1).
+ *
+ * The rat can move only in two directions:
+ * - Right (→)
+ * - Down (↓)
+ *
+ * The goal is to find a valid path from source to destination.
+ * If a path exists, print the path using a solution matrix where:
+ * - 1 represents the path taken
+ * - 0 represents unused cells
+ *
+ * If no path exists, return false or print an appropriate message.
+ *
+ * Approach:
+ * This problem is solved using Backtracking.
+ * We explore all possible paths recursively and backtrack
+ * when a path leads to a dead end.
+ */
+public class SolveMaze  {
 
     public static boolean issafe(int maze[][] , int row , int col){
         return (row >= 0 && col >= 0 &&
