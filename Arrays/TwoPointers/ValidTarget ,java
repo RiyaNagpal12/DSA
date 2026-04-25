@@ -1,3 +1,27 @@
+/*
+Problem: Pair Sum in a Rotated Sorted Array
+
+Given a sorted array that has been rotated at some pivot, 
+find if there exists a pair of elements whose sum is equal to a target value.
+
+Approach:
+1. Find the breaking point (pivot) where the sorted order is disturbed.
+   - This gives the largest element.
+2. The element next to pivot is the smallest element.
+3. Use two pointers:
+   - lp (left pointer) → smallest element
+   - rp (right pointer) → largest element
+4. Traverse the array in a circular manner:
+   - If sum == target → pair found
+   - If sum < target → move lp forward
+   - If sum > target → move rp backward
+5. Use modulo (%) to handle circular traversal.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
+
 import java.util.*;
 
 public class ques47 {
