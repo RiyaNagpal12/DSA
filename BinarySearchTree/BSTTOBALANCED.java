@@ -16,7 +16,7 @@ BST → Sorted Array → Balanced BST */
 import java.util.ArrayList;
 
 // convertedbst to balanced bst 
-public class q72 {
+public class convert{
 
     public static class node {
         int data;
