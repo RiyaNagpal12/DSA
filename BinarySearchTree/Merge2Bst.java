@@ -1,3 +1,28 @@
+
+/*
+🔹 Problem:
+Merge two Binary Search Trees (BSTs) into a single balanced BST.
+
+🔹 Approach:
+1. Perform inorder traversal on both BSTs to extract elements in sorted order.
+2. Merge the two sorted lists (similar to merge step in merge sort).
+3. Construct a balanced BST using the merged sorted list.
+
+🔹 Key Concepts Used:
+- Binary Search Tree (BST)
+- Inorder Traversal
+- Divide and Conquer
+- Merge Technique
+
+🔹 Time Complexity:
+O(n + m), where n and m are the number of nodes in the two BSTs.
+
+🔹 Space Complexity:
+O(n + m), due to storing elements in ArrayLists.
+
+🔹 Output:
+A balanced BST containing all elements from both input BSTs.
+*/
 import java.util.*;
 
 public class q75 {
