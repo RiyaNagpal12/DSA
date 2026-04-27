@@ -15,22 +15,24 @@ public class q51 {
         }
     }
 
-    public static boolean getpath(node root , int n , ArrayList<node> n1){
-        if(root==null){
-            return false;
-        }
-        if(root.data==n){
-            return true;
-        }
-        boolean left= getpath(root.left, n, n1);
-        boolean right= getpath(root.right, n, n1);
-        if(left||right){
-            return true;
-        }
+  public static boolean getpath(node root, int n, ArrayList<node> path) {
+    if (root == null) {
         return false;
-
     }
-        
+
+    path.add(root); // add current node
+
+    if (root.data == n) {
+        return true;
+    }
+
+    if (getpath(root.left, n, path) || getpath(root.right, n, path)) {
+        return true;
+    }
+
+    path.remove(path.size() - 1); // backtrack
+    return false;
+}
     
 
     public static node lca(node root , int n1 , int n2){
