@@ -1,4 +1,19 @@
-public class q69 {
+/* demonstrates the implementation of a Binary Search Tree (BST) in Java. 
+It includes:
+
+- Node creation and BST insertion logic
+- Inorder traversal (Left → Root → Right)
+- Mirror transformation of the binary tree using recursion
+
+The mirror function swaps the left and right subtrees at every node, effectively reversing the tree structure. 
+The correctness is verified by comparing inorder traversal before (sorted order) and after mirroring (reverse order).
+
+Time Complexity:
+- Insertion: O(h)
+- Inorder Traversal: O(n)
+- Mirror Operation: O(n) */
+
+public class MirrorBst{
 
     public static class node {
         int data ;
