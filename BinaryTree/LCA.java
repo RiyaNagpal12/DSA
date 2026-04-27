@@ -1,7 +1,22 @@
+/* implements the Lowest Common Ancestor (LCA) and distance between two nodes in a binary tree.
+
+Approach:
+- Find path from root to each node using recursion and backtracking
+- Compare both paths to determine the Lowest Common Ancestor (LCA)
+- Compute distance from LCA to each node
+- Total distance = distance(LCA → n1) + distance(LCA → n2)
+
+Concepts Used:
+- Tree traversal (DFS)
+- Backtracking
+- ArrayList for path storage
+
+Time Complexity: O(n)
+Space Complexity: O(n)*/
 
 import java.util.ArrayList;
 
-public class q51 {
+public class  LCA {
     public static  class node{
         int data;
         node left;
