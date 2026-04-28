@@ -1,3 +1,32 @@
+/*
+/*
+ * Stack Implementation using Array in Java
+ *
+ * This program demonstrates a basic implementation of a Stack data structure
+ * using an array. A stack follows the LIFO (Last In First Out) principle,
+ * where the last element inserted is the first one to be removed.
+ *
+ * Features:
+ * - Push operation (insert element into stack)
+ * - Pop operation (remove top element)
+ * - Peek operation (view top element without removing)
+ * - Display operation (print stack elements)
+ *
+ * Key Concepts:
+ * - 'top' variable is used to track the index of the top element
+ * - Stack Overflow occurs when the stack is full
+ * - Stack Underflow occurs when the stack is empty
+ *
+ * Time Complexity:
+ * - Push: O(1)
+ * - Pop: O(1)
+ * - Peek: O(1)
+ *
+ * This implementation is suitable for learning basic stack operations
+ * and is commonly asked in DSA exams and interviews.
+ */
+
+
 class StackArray {
     int maxSize;
     int[] stack;
