@@ -1,3 +1,37 @@
+/*
+ * Stack Implementation using Linked List in Java
+ *
+ * This program implements a Stack data structure using a singly linked list.
+ * A stack follows the LIFO (Last In First Out) principle, where insertion
+ * and deletion happen only at one end called the "top".
+ *
+ * Features:
+ * - Push operation (adds element at the top)
+ * - Pop operation (removes top element)
+ * - Peek operation (returns top element without removing)
+ * - Display operation (prints all stack elements)
+ *
+ * Key Concepts:
+ * - Each node contains data and a reference to the next node
+ * - 'top' points to the first node of the linked list
+ * - No fixed size → dynamic memory allocation
+ * - Stack Underflow occurs when trying to pop from an empty stack
+ *
+ * Advantages over Array Implementation:
+ * - No size limitation (dynamic growth)
+ * - Efficient memory utilization
+ *
+ * Time Complexity:
+ * - Push: O(1)
+ * - Pop: O(1)
+ * - Peek: O(1)
+ *
+ * This implementation is useful for understanding dynamic stack behavior
+ * and is commonly asked in coding interviews and exams.
+ */
+
+
+
 class StackLinkedList {
 
     class Node {
