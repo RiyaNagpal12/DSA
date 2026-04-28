@@ -1,3 +1,12 @@
+
+/* /*
+ * Queue implementation using array (FIFO principle).
+ * Supports enqueue, dequeue, peek, and display operations.
+ * Uses front and rear pointers to manage elements.
+ * Handles overflow (full queue) and underflow (empty queue).
+ * Time Complexity: O(1) for enqueue and dequeue.
+ */
+
 class QueueArray {
     int front, rear, maxSize;
     int[] queue;
