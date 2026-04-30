@@ -1,3 +1,32 @@
+/* /*
+ * Deque Implementation using Circular Array
+ *
+ * This program implements a double-ended queue (Deque) where elements
+ * can be inserted and removed from both front and rear.
+ *
+ * Approach:
+ * - A circular array is used to efficiently utilize space.
+ * - Two pointers (front and rear) are maintained.
+ * - Modulo (%) operation is used to wrap around the array.
+ *
+ * Operations Supported:
+ * - addFront(): Insert element at the front
+ * - addLast(): Insert element at the rear
+ * - removeFront(): Delete element from the front
+ * - removeEnd(): Delete element from the rear
+ * - getFront() / getRear(): Peek elements
+ * - display(): Print deque elements
+ *
+ * Key Idea:
+ * - Circular indexing avoids shifting of elements and ensures O(1) operations.
+ *
+ * Time Complexity:
+ * - All operations → O(1)
+ *
+ * Space Complexity:
+ * - O(n)
+ */
+
 public class q26 {
     public static class deque {
         int arr[];
