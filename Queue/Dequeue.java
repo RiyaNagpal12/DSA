@@ -1,129 +1,105 @@
 public class q26 {
-    public static class deque{
-        
+    public static class deque {
         int arr[];
-        int front , size;
-        int rear;
+        int front, rear, size;
 
         public deque(int n) {
-            size=n;
-            front =rear=-1;
+            size = n;
+            arr = new int[n];   // FIXED
+            front = rear = -1;
         }
 
-        public boolean isfull(){
-            if((rear+1)%size==front){
-                return true;
-            }
-            return false;
+        public boolean isFull() {
+            return (rear + 1) % size == front;
         }
 
-        public void addfront(int data){
-            if (isfull()){
+        public boolean isEmpty() {
+            return front == -1;
+        }
+
+        public void addFront(int data) {
+            if (isFull()) {
                 System.out.println("full");
                 return;
             }
 
-            if(front ==-1){
-                front=rear=0;
+            if (isEmpty()) {
+                front = rear = 0;
+            } else {
+                front = (front - 1 + size) % size;  // FIXED
             }
-
-            else{
-
-            front+= (front+1)%size;}
-            arr[front]=data;
+            arr[front] = data;
         }
 
-        public void addlast(int data){
-            if(isfull()){
+        public void addLast(int data) {
+            if (isFull()) {
                 System.out.println("full");
                 return;
-            
-
             }
-            if(front ==-1){
-                front=rear=0;
-            }
-            else{
-            rear+=(rear+1)%size;}
-            arr[rear]=data;
 
+            if (isEmpty()) {
+                front = rear = 0;
+            } else {
+                rear = (rear + 1) % size;  // FIXED
+            }
+            arr[rear] = data;
         }
 
-        public int removefront(){
-            if(isEmpty()){
+        public int removeFront() {
+            if (isEmpty()) {
                 System.out.println("empty");
                 return -1;
             }
+
             int val = arr[front];
-            if(front==rear){
-                front=rear=-1;
-            }
-            else{
-                front+=(front+1)%size;
+            if (front == rear) {
+                front = rear = -1;
+            } else {
+                front = (front + 1) % size;
             }
             return val;
         }
 
-        public int removeend(){
-            if(isEmpty()){
+        public int removeEnd() {
+            if (isEmpty()) {
                 System.out.println("empty");
                 return -1;
             }
 
             int val = arr[rear];
-            if(front==rear){
-                front=rear=-1;
+            if (front == rear) {
+                front = rear = -1;
+            } else {
+                rear = (rear - 1 + size) % size;  // FIXED
             }
-            else{
-            rear+=(rear+1)%size;}
             return val;
         }
 
-    public int getFront() {
-        if (isEmpty()) {
-            System.out.println("Deque is empty");
-            return -1;
-        }
-        return arr[front];
-    }
-
-    // Peek rear
-    public int getRear() {
-        if (isEmpty()) {
-            System.out.println("Deque is empty");
-            return -1;
-        }
-        return arr[rear];
-    }
-
-    public void display(){
-        if(isEmpty()){
-            System.out.println("empty");
-        }
-        int i =front;
-        while(true){
-            System.out.print(arr[i]+ "");
-            if(i==rear){
-                break;
+        public void display() {
+            if (isEmpty()) {
+                System.out.println("empty");
+                return;
             }
-            i=(i+1)%size;
-        }
-        
-    }
 
-
-        
-
-        public boolean  isEmpty(){
-            if(front ==-1){
-                return true;
-
+            int i = front;
+            while (true) {
+                System.out.print(arr[i] + " ");
+                if (i == rear) break;
+                i = (i + 1) % size;
             }
-            return false;
+            System.out.println();
         }
     }
+
     public static void main(String[] args) {
-         deque dq = new deque(5);
+        deque dq = new deque(5);
 
+        dq.addLast(10);
+        dq.addLast(20);
+        dq.addFront(5);
+        dq.display();   // 5 10 20
+
+        dq.removeFront();
+        dq.display();   // 10 20
     }
 }
