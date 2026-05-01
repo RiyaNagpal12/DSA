@@ -1,3 +1,5 @@
+// reverse first k elements of queue
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
