@@ -1,0 +1,33 @@
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+// generate binary no 
+public class q28 {
+
+    public static void generatebinary(int n ){
+        Queue <String> q = new LinkedList<>() ;
+        q.add("1");
+
+        for(int i=0;i<n ; i++){
+            String current = q.remove();
+            System.out.println(current);
+
+            q.add(current+"0");
+            q.add(current+"1");
+        }
+
+
+
+    }
+
+    public static void main(String[] args){
+        int n=2 ;
+        generatebinary(n);
+
+    }
+    
+    
+
+    
+}
