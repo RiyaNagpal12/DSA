@@ -2,7 +2,7 @@ import java.util.*;
 
 //stock span problem " no of consecutive days when price  <= todays price "
 // formualla : i-prevhigh
-public class q12 {
+public class StockSpan{
   
     public static void stockspan(int stock[] , int span[]){
         Stack<Integer> st =new Stack<>();
