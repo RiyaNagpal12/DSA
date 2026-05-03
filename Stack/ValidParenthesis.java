@@ -1,4 +1,4 @@
-/ string containg ( ) { } [ ]
+// string containg ( ) { } [ ]
 
 //Check if it is valid:
 
