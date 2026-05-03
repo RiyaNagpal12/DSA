@@ -1,3 +1,9 @@
+/*
+Checks for duplicate (redundant) parentheses using a stack.
+If no elements exist between a pair of (), it returns true.
+Time: O(n), Space: O(n)
+*/
+
 import java.util.Stack;
 
 /* You are given an expression (string).
