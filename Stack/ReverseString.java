@@ -1,7 +1,7 @@
 
-import java.util.ArrayList;
-
 // reverse a string using stack 
+import java.util.*; 
+
 
 public class q11 {
 
