@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class q17 {
+public class TapWater {
     public static int tappingwater(int height[]){
         Stack <Integer> st = new Stack<>();
         int water =0;
