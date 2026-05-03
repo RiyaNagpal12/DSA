@@ -1,3 +1,9 @@
+/*
+Stock Span Problem:
+Finds the number of consecutive days before today 
+for which the stock price was less than or equal to today's price.
+Uses a stack for efficient computation in O(n) time.
+*/
 import java.util.*;
 
 //stock span problem " no of consecutive days when price  <= todays price "
