@@ -1,3 +1,4 @@
+// Find the second largest element from an array
 public class secondlargest {
 
     public static int findsecondlargest(int arr[]) {
