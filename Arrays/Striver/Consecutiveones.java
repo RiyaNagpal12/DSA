@@ -8,7 +8,7 @@ public static class ConsecutiveOnes{
         count ++;
         max_count = Math.max(count,max_count);
       } 
-      elseif {
+      else {
         count=0; 
 
     }
