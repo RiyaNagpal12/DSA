@@ -1,3 +1,5 @@
+
+// find missing element from 0 to n 
 import java.util.*;
 public class FindMissing{ 
   public static int find(int arr[]){
