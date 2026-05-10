@@ -1,3 +1,5 @@
+// Maximum no of ones 
+
 import java.util.*;
 public static class ConsecutiveOnes{ 
   public static int count (int arr[]){ 
