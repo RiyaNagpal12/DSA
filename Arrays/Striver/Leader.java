@@ -1,4 +1,6 @@
+// Find the maximum no from rightmost direction 
 public class Leader {
+  
   public static void leader(int arr[] ){
     int max = arr[arr.length-1];
     System.out.print(max + " ");
