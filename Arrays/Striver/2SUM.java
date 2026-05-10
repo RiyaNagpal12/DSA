@@ -1,4 +1,8 @@
+
+/// 2 sum problem
 public class Two_Sum{
+
+  
   public static void twosum(int arr[] ,int k){
     int i=0;
     int j = arr.length-1;
