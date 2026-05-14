@@ -1,4 +1,4 @@
-
+// Rotate the array to left by k
 public static void reverse(int arr[], int start, int end) {
     while (start < end) {
         int temp = arr[start];
