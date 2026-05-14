@@ -1,3 +1,4 @@
+// swap using arraylist 
 import java.util.*;
 public class ques40 {
     public static void swap(ArrayList <Integer> list , int index1 , int index2 ){
