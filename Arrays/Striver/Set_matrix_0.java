@@ -1,3 +1,4 @@
+// Set Matrix to 0
 public class Set_Matrix {
 
     public static void set(int arr[][]) {
