@@ -1,3 +1,4 @@
+// Check if Palindrome Or not 
 public class Palindrome{ 
 public static boolean ispalindrome(String str){
   int left =0;
