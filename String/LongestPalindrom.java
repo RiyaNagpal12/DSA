@@ -1,5 +1,6 @@
 public class LongestPalindrome {
 
+    // longestPalindrome from a String
     public static String palindrome(String str) {
 
         if (str == null || str.length() < 1) {
