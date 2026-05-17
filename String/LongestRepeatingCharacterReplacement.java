@@ -1,3 +1,4 @@
+//LongestRepeatinfCharacter 
 public class LongestRepeatingCharacterReplacement {
 
     public static int maxlength(String str, int k) {
