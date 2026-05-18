@@ -1,3 +1,4 @@
+// Deletion in Singly Linked list 
 public class Node { 
 int data ;
 Node next ; 
