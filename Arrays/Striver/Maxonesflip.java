@@ -1,4 +1,5 @@
 public class Maxones {
+    // maxsubarray with atmost k zeroes 
 
     public static int length(int arr[], int k) {
 
