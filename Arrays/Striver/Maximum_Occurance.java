@@ -1,3 +1,4 @@
+// element with max accurance 
 public class Max_Occurance{
   public static int result (int arr[]){
     int count =1 ;
