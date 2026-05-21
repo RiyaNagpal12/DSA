@@ -1,3 +1,4 @@
+// peint spiral matrix 
 public class Spiral {
   public static void spiral(int arr[][]){
     int start_row =0;
