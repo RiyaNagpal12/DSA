@@ -1,3 +1,4 @@
+// find union using arraylist
 public class union {
   public static void union (int arr1[], arr2[]){
     ArrayList<Integer> list = new ArrayList<>();
