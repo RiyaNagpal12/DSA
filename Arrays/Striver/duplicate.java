@@ -1,3 +1,4 @@
+// remove duplicatea 
 public class Duplicate {
 
     public static int find(int arr[]) {
