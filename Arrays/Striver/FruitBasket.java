@@ -1,4 +1,5 @@
 public class fruitbasket { 
+  // fruit basket problem 
 public static int fruit (int fruits[]){
   int left =0;
   int right =0;
