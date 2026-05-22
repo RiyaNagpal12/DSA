@@ -1,3 +1,4 @@
+// Fruit basket problem 
 public class fruitbasket {
   public static int length( int fruits[]){
     int left =0; 
