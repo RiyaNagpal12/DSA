@@ -10,6 +10,7 @@ Node (int data){
 public class LinkedList{ 
 
 Node head ; 
+  // delete from begining
 void deleteatbegining(){
   if (head == null){
     System.out.println(" Null");
