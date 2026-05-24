@@ -4,18 +4,16 @@ If no elements exist between a pair of (), it returns true.
 Time: O(n), Space: O(n)
 */
 
-import java.util.Stack;
-
 /* You are given an expression (string).
 You need to check if it contains duplicate parentheses.
 
-👉 Duplicate parentheses means:
+ Duplicate parentheses means:
 
 Extra brackets with no meaningful content inside
 Example:
-"((a+b))" → ❌ Duplicate exists
-"(a+(b)/c)" → ✅ No duplicate
-"(a+b)" → ✅ No duplicate
+"((a+b))" →  Duplicate exists
+"(a+(b)/c)" →  No duplicate
+"(a+b)" →  No duplicate
 "*/
 
 /*Approach (Using Stack)
@@ -25,6 +23,7 @@ When ')' appears:
 Count elements inside the last '('
 If count ≤ 1 → Duplicate found
 Otherwise → valid */
+import java.util.Stack;
 public class q14 {
 
     public static boolean isduplicate(String str){
