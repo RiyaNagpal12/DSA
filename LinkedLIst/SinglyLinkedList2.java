@@ -18,6 +18,7 @@ void deleteatbegining(){
   } 
   head = head.next ; 
 } 
+  // delete given key value 
 void delete(int key) {
 
     // If list empty
