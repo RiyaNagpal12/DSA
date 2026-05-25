@@ -12,9 +12,9 @@ Time Complexity: O(n)
 Space Complexity: O(h) (recursion stack)*/
 
 
-public class q53 {
+public class kancestor {
     
-    public static  class node{
+public static  class node{
         int data;
         node left;
         node right;
