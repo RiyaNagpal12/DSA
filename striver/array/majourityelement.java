@@ -1,0 +1,17 @@
+public class solution {
+  public static int majourityelement(int nums[]){
+   HashMap<Integer , Integer> map= HashMap<>();
+    for(int i =0;i<nums.length ;i++){
+      map.put(nums[i] , map.getOrDefault(nums[i] , 0)+1);
+    }
+    for(Map.Entry<Integer , Integer > entry : map.entrySet()){
+      if(entry.getValue() > nums.length /2){
+        return entry.getKey();
+      
+      }
+    }
+    
+
+    return -1;
+    }
+}
